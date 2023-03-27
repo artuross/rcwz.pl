@@ -12,8 +12,6 @@ Many commenters in the HN thread argued that Kubernetes is complex and I think t
 
 Part of the complexity lies in it's versatility: you can run almost any workload on Kubernetes. Take containers: in Kubernetes you don't run containers on their own. Kubernetes has a concept of `Pods` - a group of one or more containers tighly coupled. But even with `Pods`, you are quite unlikely to run them on their own. You will usually run them via a `Deployment`, `DaemonSet` or a `StatefulSet`. That's before you've even exposed the service to the outside world. That versatility means that resources must be composable. In other words, they must be like Lego, when you can join multiple pieces to build something meaningful.
 
-Part of the complexity lies in it's versatility, you can run almost any workload on Kubernetes and you can modify the configuration to your needs. Take containers: in Kubernetes you don't run containers on their own. Kubernetes has a concept of `Pods` - a group of one or more containers tighly coupled. But even with `Pods`, you are quite unlikely to run them on their own. You will usually run them via a `Deployment`, `DaemonSet` or a `StatefulSet`. That's before you've even exposed the service to the outside world. That versatility means that resources must be composable. In other words, they must be like Lego, when you can join multiple pieces to build something meaningful.
-
 But that's only part of the story, there's a whole lot of things running in any production-ready cluster that are not required or needed by Kubernetes at all - you could build a minimal Kubernetes cluster and it would work just fine, but you really, _really_ don't want to do that.
 
 ## Production is hard
