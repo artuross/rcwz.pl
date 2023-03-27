@@ -20,7 +20,7 @@ You see, when building a service, one of the many things that you don't want to 
 
 There's a plethora of reasons why a service may not offer great experience. Maybe you just launched a new product and the service is overwhelmed by signups? That's a good problem to have. More likely, there's a bug that causes panics and the applications crashes. Sometimes it's a configuration issue, other times [a cert expires](https://www.theverge.com/2020/2/3/21120248/microsoft-teams-down-outage-certificate-issue-status).
 
-This brings me to my point: **production is hard**. You need to manage applications, logs, metrics, storage, databases, backups, load balancing, deployments, secrets and hundreds of other things. Even more if you're working with microservices.
+This brings me to my point: **production is hard**. You need to manage apps, logs, metrics, storage, databases, backups, load balancing, deployments, secrets and hundreds of other things. Even more if you're working with microservices.
 
 You need to do all of these things whether you use Kubernetes or not. With cloud, you get a lot of that for a price and if you're willing to pay that price and accept that part of it comes with a vendor lock-in, you can significantly simplify your stack. That's what we did before Kubernetes was _the cool thing_ and it worked just fine.
 
