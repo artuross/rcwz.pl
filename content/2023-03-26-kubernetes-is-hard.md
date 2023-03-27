@@ -1,6 +1,7 @@
 ---
 title: Kubernetes is hard
 date: 2023-03-26T16:21:00+02:00
+hn_link: https://news.ycombinator.com/item?id=35331887
 ---
 
 Recently, [37signals](https://37signals.com/) unveiled [mrsk](https://github.com/mrsked/mrsk), a tool developed internally to ease with deployments of their services and an accompanying [blog post](https://dev.37signals.com/bringing-our-apps-back-home/) which sparked a lengthy [discussion on Hacker News](https://news.ycombinator.com/item?id=35263285).
