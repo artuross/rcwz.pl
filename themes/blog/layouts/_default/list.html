@@ -1,11 +1,17 @@
 {{ define "main" }}
-<h1>{{ .Title }}</h1>
-{{ range .Pages.ByPublishDate.Reverse }}
-<p>
-    <h3><a class="title" href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-    <a class="summary" href="{{ .RelPermalink }}">
-        <p>{{ .Summary }}</p>
+<h1>Posts</h1>
+<ul class="posts">
+  {{ range .Pages.ByPublishDate.Reverse }}
+  <li class="post-entry">
+    <span class="date">2022-03-27</span>
+
+    <a
+      class="title"
+      href="{{ .RelPermalink }}"
+    >
+      {{ .Title }}
     </a>
-</p>
-{{ end }}
+  </li>
+  {{ end }}
+</ul>
 {{ end }}

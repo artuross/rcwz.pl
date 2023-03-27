@@ -1,3 +1,7 @@
 {{ define "main" }}
 <h1>{{ .Title }}</h1>
-{{ .Content }} {{ end }}
+{{ .Content }} {{ if .Params.hn_link }}
+<div class="comment_on_hn">
+  Comment on <a href="{{ .Params.hn_link }}">Hacker News</a>.
+</div>
+{{ end }} {{ end }}

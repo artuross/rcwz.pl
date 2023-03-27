@@ -18,7 +18,49 @@
 
       body {
         margin: 0;
-        padding: 10px;
+        padding: 0 10px;
+      }
+
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px 0;
+      }
+
+      .header-link {
+        color: #333;
+        text-decoration: none;
+        font-weight: 500;
+        margin-right: 10px;
+      }
+
+      .header-link:last-of-type {
+        margin-right: 0;
+      }
+
+      .posts {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .post-entry {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+
+      .post-entry .date {
+        font-size: 0.9rem;
+        font-weight: 100;
+        margin-right: 20px;
+      }
+
+      .post-entry .title {
+        font-size: 0.9rem;
+        text-decoration: none;
+        font-weight: 500;
       }
 
       ::selection {
@@ -53,7 +95,6 @@
       }
 
       code {
-        /* display: inline-block; */
         background-color: #ededed;
         padding: 3px 6px;
         border-radius: 3px;
@@ -62,12 +103,31 @@
       strong {
         font-weight: 500;
       }
+
+      .comment_on_hn {
+        margin-top: 20px;
+      }
     </style>
 
     <title>{{ .Title }}</title>
   </head>
 
   <body>
+    <div class="header">
+      <div class="left">
+        <a href="/">rcwz.sh</a>
+      </div>
+
+      <div class="right">
+        <a
+          class="header-link"
+          href="/"
+        >
+          blog
+        </a>
+      </div>
+    </div>
+
     <div id="content">{{- block "main" . }}{{- end }}</div>
   </body>
 </html>
