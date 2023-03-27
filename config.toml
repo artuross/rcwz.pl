@@ -1,4 +1,4 @@
-baseURL = 'http://rcwz.sh/'
+baseURL = 'http://rcwz.pl/'
 languageCode = 'en-us'
-title = 'rcwz.sh'
+title = 'rcwz.pl'
 theme = 'blog'

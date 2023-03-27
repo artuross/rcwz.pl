@@ -2,9 +2,9 @@ name = "Blog"
 license = "MIT"
 licenselink = "https://github.com/artuross/blog/blob/main/LICENSE"
 description = "Theme for my blog."
-homepage = "https://rcwz.sh"
+homepage = "https://rcwz.pl"
 min_version = "0.41.0"
 
 [author]
   name = "Artur Rychlewicz"
-  homepage = "https://rcwz.sh"
+  homepage = "https://rcwz.pl"
