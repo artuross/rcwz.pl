@@ -1,5 +1,5 @@
 ---
-title: 'Kubernetes is hard'
+title: Kubernetes is hard
 date: 2023-03-26T16:21:00+02:00
 draft: true
 ---
@@ -10,7 +10,7 @@ Recently, [37signals](https://37signals.com/) unveiled [mrsk](https://github.com
 
 Many commenters in the HN thread argued that Kubernetes is complex and I think they are partially right.
 
-Part of the complexity lies in it's versatility: you can run almost any workload on Kubernetes. Take containers: in Kubernetes you don't run containers on their own. Kubernetes has a concept of `Pods` - a group of one or more containers tighly coupled. But even with `Pods`, you are quite unlikely to run them on their own. You will usually run them via a `Deployment`, `DaemonSet` or a `StatefulSet`. That's before you've even exposed the service to the outside world. That versatility means that resources must be composable. In other words, they must be like Lego, when you can join multiple pieces to build something meaningful.
+Part of the complexity lies in it's versatility, after all, you can run almost any workload on Kubernetes. That versatility means that resources must be composable. In other words, they must be like Lego, when you can join multiple pieces to build something meaningful. Take containers: in Kubernetes you don't run containers on their own. Kubernetes has a concept of `Pods` - a group of one or more containers tighly coupled. But even with `Pods`, you are quite unlikely to run them on their own. You will usually run them via a `Deployment`, `DaemonSet` or a `StatefulSet`. That's before you've even exposed the service to the outside world.
 
 But that's only part of the story, there's a whole lot of things running in any production-ready cluster that are not required or needed by Kubernetes at all - you could build a minimal Kubernetes cluster and it would work just fine, but you really, _really_ don't want to do that.
 
@@ -22,14 +22,14 @@ There's a plethora of reasons why a service may not offer great experience. Mayb
 
 This brings me to my point: **production is hard**. You need to manage applications, logs, metrics, storage, databases, backups, load balancing, deployments, secrets and hundreds of other things. Even more if you're working with microservices.
 
-You need to do all of these things whether you use Kubernetes or not. With cloud, you get a lot of that for a price and if you're willing to pay that price and accept that part of it comes with a vendor lock-in, you can significantly simplify your stack. But even the best cloud services don't offer what Kubernetes offers: a choice.
+You need to do all of these things whether you use Kubernetes or not. With cloud, you get a lot of that for a price and if you're willing to pay that price and accept that part of it comes with a vendor lock-in, you can significantly simplify your stack. That's what we did before Kubernetes was _the cool thing_ and it worked just fine.
 
-With Kubernetes you can evolve your stack. If you're small and don't need autoscaling, you don't need to have HPA. Maybe some of your apps are better scaled vertically? Use VPA. Perhaps you need some advanced scaling capabilities? Use KEDA. Or bring your own.
+Forget the hype, there's a reason why Kubernetes is being adopted by so many companies. It allows dev teams to not worry about all these things; all they must do is to write a simple YAML file. More importantly, teams no longer need to ask DevOps/infra folks to add DNS entry and create a Load Balancer just to expose a service. They can do it on their own, in a declarative manner, _if_ you have an operator do to it.
 
 ## Should you use Kubernetes?
 
-No. Just because Kubernetes works for one company doesn't mean it will work for you too. Kubernetes is hard, but that's because production and microservices and software is hard. If you can simplify your workflow with existing solutions, do it, because it will save you time and money. Consider the tradeoffs and make decisions based on that.
+With Kubernetes the "burden" of maintenance of the clusters is on DevOps/infra teams. Is it going to work for every company? No. Does it make sense if you have 3 microservices? Maybe. Maybe not. If you reach a certain scale then go for it. Maybe your use case is simple enough that adopting Kubernetes is too costly.
 
-If existing solutions are too complex or don't solve your problem, develop your own, just remember there's a cost to it too: now you need to maintain it, build documentation for internal teams, train new people to use it.
+Adopting Kubernetes means that you have a unified dev experience that you can adapt as you grow. Mix and match operators to create powerful automations when you need them. Consider autoscaling: what is the right way to autoscale your services? Should you scale it horizontally, vertically? Maybe the service should scale with open connections? Maybe you don't need autoscaling at all.
 
-I like Kubernetes. I like it a lot. Would I use it for every case? No. Would I consider it for every case? Certainly yes. It gives you so many great things out of the box and you can push it very far. Does that mean you need to run everything on Kubernetes? No.
+I like Kubernetes. I like it a lot. Would I use it for every case? No. Would I consider it for every company? Probably. It gives you so many great things out of the box and you can push it very far. Does that mean you need to run everything on Kubernetes? No.
