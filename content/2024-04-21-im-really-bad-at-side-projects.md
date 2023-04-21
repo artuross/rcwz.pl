@@ -48,7 +48,9 @@ For example, when I wanted to build my own solitaire site, I had three goals:
 
 Put it that way, it's clear I could have not succeeded. I should have limited the scope to support just one game I played the most and don't stress too much on the design. These things can be improved later.
 
+As a side note, I feel like I blog the right way. Granted, the thing that matters in blogs the most _is_ the content and blogging itself is iterative: you publish one post at a time. I wanted to own the content and decided to publish on my own domain with my own theme. That's also why this blog looks like shit. ¯\\\_(ツ)\_/¯
+{.sidenote}
+
 Another failure on my side was that I used to announce to my friends what I was working on. I should have focused on building stuff and show them a working prototype, not _a concept_. Telling friends sounds great, but I feel like it gives a false sense of an accomplishment.
 
-As a side note, this blog, suprisingly, is a done the right way. Granted, the thing that matters in blogs the most _is_ the content and blogging itself is iterative: you publish one post at a time. I wanted to own the content and decided to publish on my own domain with my own theme. That's also why this blog looks like shit. ¯\\\_(ツ)\_/¯
-{.sidenote}
+More recently, I've discovered that even when I struggle to do something and don't feel particularly excited about working on that the next day, it's still a good idea to force myself to work on it, even if only for 15 minutes. By the time is up, I may have come up with a plan how to solve it.
