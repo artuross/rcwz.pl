@@ -3,7 +3,7 @@
 <ul class="posts">
   {{ range .Pages.ByPublishDate.Reverse }}
   <li class="post-entry">
-    <span class="date">2022-03-27</span>
+    <span class="date">{{ time.Format "2006-01-02" .Date }}</span>
 
     <a
       class="title"
