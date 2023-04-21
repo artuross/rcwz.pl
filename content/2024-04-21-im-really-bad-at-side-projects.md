@@ -5,7 +5,7 @@ date: 2023-04-21T12:01:00+02:00
 
 I like side projects. Basically, my whole life is a side project after a side project after a side project. You'd think by now I must be some kind of a side project ninja, but no... I almost never finish them.
 
-Before we dive deeper why I rarely finish my side projects, I want you to understand what a side project means _to me_, as you may have a different definition. It's a project that I work consistently on for at least few days. It does not neet to become public one day nor it needs to become a potential revenue stream. Oftentimes, side projects are just about learning stuff that I consider interesting.
+Before we dive deeper why I rarely finish my side projects, I want you to understand what a side project means _to me_, as you may have a different definition. It's a project that I work consistently on for at least few days. It does not need to become public one day nor it needs to become a potential revenue stream. Oftentimes, side projects are just about learning stuff that I consider interesting.
 
 ---
 
@@ -16,7 +16,7 @@ A few weeks ago, I've been playing with [Talos](https://www.talos.dev/). Talos i
 
 It's a perfect example of a project that does not have clearly defined boundaries. I started by just wanting to play with Talos a bit. I quickly realized that playing on my Mac is not a great idea so I've decided to set it up on Hetzner, which is a great cloud provider (seriously, use them) that's not gonna cost me a fortune. It could just do that, but why not use Terraform? After all, I wanted to get to know it better since I don't use it that often at work. Maybe even write a blog post, who knows, right?
 
-I've worker on it for maybe 2-3 weeks, set up few essential operators to make the cluster ready-but-not-quite and moved on. Frankly speaking, I don't even remember why - I was probably busy with something in real life. It's not like this project was a total failure though, I learned a ton of stuff and played with many tools that I don't use on a daily basis.
+I've worked on it for maybe 2-3 weeks, set up few essential operators to make the cluster ready-but-not-quite and moved on. Frankly speaking, I don't even remember why - I was probably busy with something in real life. It's not like this project was a total failure though, I learned a ton of stuff and played with many tools that I don't use on a daily basis.
 
 ---
 
