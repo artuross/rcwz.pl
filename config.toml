@@ -2,3 +2,7 @@ baseURL = 'https://rcwz.pl/'
 languageCode = 'en-us'
 title = 'rcwz.pl'
 theme = 'blog'
+
+[markup.goldmark.parser.attribute]
+    block = true
+    title = true
