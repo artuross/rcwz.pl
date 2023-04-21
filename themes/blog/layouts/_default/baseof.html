@@ -112,6 +112,14 @@
         font-weight: 500;
       }
 
+      p.sidenote {
+        background-color: #eee;
+        padding: 10px;
+        margin: 20px 0;
+        margin-left: -10px;
+        margin-right: -10px;
+      }
+
       a:hover {
         color: #d8b863;
       }
@@ -126,6 +134,12 @@
         font-weight: 500;
       }
 
+      hr {
+        margin: 1.5rem 0;
+        border: 1px solid #eee;
+        border-bottom: 0;
+      }
+
       .comment_on_hn {
         margin-top: 20px;
       }
@@ -133,6 +147,36 @@
       .footer {
         margin: 20px 0;
         font-weight: 100;
+      }
+
+      @media screen and (min-width: 820px) {
+        body {
+          max-width: 820px;
+        }
+
+        p.sidenote {
+          padding: 20px;
+          border-radius: 4px;
+        }
+
+        .content > ul,
+        .content > ol {
+          padding-left: 50px;
+        }
+
+        .content > ul.posts {
+          padding-left: 10px;
+        }
+
+        .content > * {
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+
+        .header,
+        .footer {
+          padding: 0 10px;
+        }
       }
     </style>
   </head>
