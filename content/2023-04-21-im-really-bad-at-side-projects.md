@@ -1,6 +1,7 @@
 ---
 title: I'm really bad at side projects
 date: 2023-04-21T17:00:00+02:00
+hn_link: https://news.ycombinator.com/item?id=35654906
 ---
 
 I like side projects. Basically, my whole life is a side project after a side project after a side project. You'd think by now I must be some kind of a side project ninja, but no... I almost never finish them.
