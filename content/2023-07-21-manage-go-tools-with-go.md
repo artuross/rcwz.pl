@@ -100,7 +100,7 @@ It would be dishonest to not mention a few things that are not great about this 
 
    Some tools, even go as far as to print a warning. For example [PlanetScale's](https://planetscale.com/) CLI, [`pscale`](https://github.com/planetscale/cli), prints:
 
-   ```sh
+   ```txt
    !! WARNING: You are using a self-compiled binary which is not officially supported.
    !! To dismiss this warning, set PSCALE_DISABLE_DEV_WARNING=true
    ```
