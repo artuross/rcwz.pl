@@ -6,3 +6,6 @@ theme = 'blog'
 [markup.goldmark.parser.attribute]
     block = true
     title = true
+
+[markup.highlight]
+    noClasses = false
