@@ -146,6 +146,7 @@ hr {
 
 li > .highlight {
   margin: 20px -20px;
+  margin-right: -10px;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
 }
@@ -201,6 +202,10 @@ li > .highlight {
   div.highlight {
     padding: 20px;
     border-radius: 4px;
+  }
+
+  li > .highlight {
+    margin-right: -20px;
   }
 
   .header,
