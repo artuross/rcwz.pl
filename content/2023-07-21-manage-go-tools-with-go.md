@@ -86,7 +86,7 @@ Now your Go tools can be installed and versioned by Go. Isn't that great?
 
 It would be dishonest to not mention a few things that are not great about this approach:
 
-1. `go.mod` and `go.sum` become polluted with dependencies.
+1. `go.mod` and `go.sum` become polluted with dependencies
 
    Depending on how much you care about keeping your dependency list clean, this may not be desired.
 
@@ -105,13 +105,13 @@ It would be dishonest to not mention a few things that are not great about this 
    !! To dismiss this warning, set PSCALE_DISABLE_DEV_WARNING=true
    ```
 
-3. Doesn't work with non-Go binaries.
+3. Doesn't work with non-Go binaries
 
    Sometimes, you just need to have a tool that is not build with Go. For example, when using gRPC, [`protoc-gen-go`](https://github.com/golang/protobuf) is used which can be versioned with this method, however, its dependency, [`protoc`](https://grpc.io/docs/protoc-installation/) cannot, as it's not a Go program.
 
    Unfortunately, it means that for some repositories, you'd still need to maintain an alternative way to version binaries. Depending on the use case, it may still be worth it.
 
-4. You need to configure your editor to use it.
+4. You need to configure your editor to use it
 
    By default, most editors will not run `go run ...` for you so it requires a bit of configuration. The good news, is that once it's done, it will work for any repository that uses this pattern. For most tools, it's not required anyway.
 
