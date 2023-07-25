@@ -30,7 +30,7 @@ While the second option is better, as you use specific version of the tool, it's
 
 This problem can be fixed with `docker` or `docker compose`, but Docker is slow and it doesn't integrate well with `go` commands.
 
-Luckily, since [Go 1.17](https://go.dev/doc/go1.17#go%20run) `go run` command accepts an optional version suffifx, which lets us run any Go binary without installing it locally:
+Luckily, since [Go 1.17](https://go.dev/doc/go1.17#go%20run) `go run` command accepts an optional version suffix, which lets us run any Go binary without installing it locally:
 
 ```sh
 go run github.com/golangci/golangci-lint/cmd/golangci-lint@v1.53.3 run
