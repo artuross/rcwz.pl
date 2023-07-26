@@ -34,6 +34,12 @@ body {
   margin: 0 auto;
   font-size: 0.9rem;
   line-height: 1.6rem;
+
+  // fix for WebKit text adjustment: https://stackoverflow.com/a/22417120
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 .header {
@@ -105,9 +111,7 @@ a {
 p.sidenote {
   background-color: #eee;
   padding: 10px;
-  margin: 20px 0;
-  margin-left: -10px;
-  margin-right: -10px;
+  margin: 20px -10px;
 }
 
 a:hover {
@@ -202,6 +206,7 @@ li > .highlight {
   div.highlight {
     padding: 20px;
     border-radius: 4px;
+    margin: 20px -20px;
   }
 
   li > .highlight {
