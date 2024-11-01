@@ -4,7 +4,7 @@ date: 2023-07-21T17:00:00+02:00
 hn_link: https://news.ycombinator.com/item?id=36814653
 ---
 
-In almost any code, there comes a time when you need to use external tools for certain functionality. For example, you may want to use [`golangci-lint`](github.com/golangci/golangci-lint) to lint your code, generate mocks with [`mockgen`](https://github.com/golang/mock), or run your DB schema migrations with [`sql-migrate`](https://github.com/rubenv/sql-migrate).
+In almost any code, there comes a time when you need to use external tools for certain functionality. For example, you may want to use [`golangci-lint`](https://github.com/golangci/golangci-lint) to lint your code, generate mocks with [`mockgen`](https://github.com/golang/mock), or run your DB schema migrations with [`sql-migrate`](https://github.com/rubenv/sql-migrate).
 
 There are few ways to achieve this: some projects use `Makefile` to install dependencies, some other use `docker compose` and run tools by running containers with mounted volumes.
 
