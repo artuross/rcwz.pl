@@ -1,220 +1,252 @@
 @font-face {
-  font-family: 'Fira Mono';
-  font-style: normal;
-  font-weight: 400;
-  src: url('/fonts/fira-mono-400.woff2') format('woff2');
+	font-family: "Fira Mono";
+	font-style: normal;
+	font-weight: 400;
+	src: url("/fonts/fira-mono-400.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: 'Fira Mono';
-  font-style: normal;
-  font-weight: 500;
-  src: url('/fonts/fira-mono-500.woff2') format('woff2');
+	font-family: "Fira Mono";
+	font-style: normal;
+	font-weight: 500;
+	src: url("/fonts/fira-mono-500.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: 'Fira Mono';
-  font-style: normal;
-  font-weight: 700;
-  src: url('/fonts/fira-mono-700.woff2') format('woff2');
+	font-family: "Fira Mono";
+	font-style: normal;
+	font-weight: 700;
+	src: url("/fonts/fira-mono-700.woff2") format("woff2");
 }
 
 :root {
-  --font-family: 'Fira Mono', monospace;
+	--font-family: "Fira Mono", monospace;
 }
 
 * {
-  font-family: var(--font-family);
+	font-family: var(--font-family);
 }
 
 body {
-  margin: 0;
-  padding: 0 10px;
-  max-width: 800px;
-  margin: 0 auto;
-  font-size: 0.9rem;
-  line-height: 1.6rem;
+	margin: 0;
+	padding: 0 10px;
+	max-width: 800px;
+	margin: 0 auto;
+	font-size: 0.9rem;
+	line-height: 1.6rem;
 
-  // fix for WebKit text adjustment: https://stackoverflow.com/a/22417120
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  text-size-adjust: 100%;
+	// fix for WebKit text adjustment: https://stackoverflow.com/a/22417120
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
 }
 
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 20px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 20px 0;
 }
 
 .header-link {
-  color: #333;
-  text-decoration: none;
-  font-weight: 500;
-  margin-right: 10px;
+	color: #333;
+	text-decoration: none;
+	font-weight: 500;
+	margin-right: 10px;
 }
 
 .header-link:last-of-type {
-  margin-right: 0;
+	margin-right: 0;
 }
 
 .posts {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+	list-style: none;
+	padding: 0;
+	margin: 0;
 }
 
 .content {
-  margin: 60px 0;
+	margin: 60px 0;
 }
 
 .post-entry {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
 }
 
 .post-entry .date {
-  font-weight: 100;
-  margin-right: 20px;
+	font-weight: 100;
+	margin-right: 20px;
 }
 
 .post-entry .title {
-  text-decoration: none;
-  font-weight: 500;
+	text-decoration: none;
+	font-weight: 500;
 }
 
 ::selection {
-  background-color: #fff2ba;
+	background-color: #fff2ba;
 }
 
 h1 {
-  font-size: 1.2rem;
-  line-height: 1.8rem;
-  font-weight: 700;
+	font-size: 1.2rem;
+	line-height: 1.8rem;
+	font-weight: 700;
 }
 
 h2 {
-  font-size: 1.1rem;
-  line-height: 1.65rem;
-  font-weight: 700;
+	font-size: 1.1rem;
+	line-height: 1.65rem;
+	font-weight: 700;
+}
+
+h3 {
+	font-size: 1rem;
+	line-height: 1.5rem;
+	font-weight: 700;
 }
 
 a {
-  color: #333;
-  font-weight: 500;
-  text-decoration: underline;
+	color: #333;
+	font-weight: 500;
+	text-decoration: underline;
 }
 
 p.sidenote {
-  background-color: #eee;
-  padding: 10px;
-  margin: 20px -10px;
+	background-color: #eee;
+	padding: 10px;
+	margin: 20px -10px;
 }
 
 a:hover {
-  color: #ffc830;
+	color: #ffc830;
 }
 
 code {
-  background-color: #ededed;
-  padding: 3px 6px;
-  border-radius: 3px;
+	background-color: #ededed;
+	padding: 3px 6px;
+	border-radius: 3px;
 }
 
 a:has(code) {
-  font-weight: normal;
-  text-decoration: none;
+	font-weight: normal;
+	text-decoration: none;
 }
 
 a:has(code):hover {
-  color: unset;
+	color: unset;
 }
 
 a > code {
-  background-color: #fff2ba;
-  color: black;
+	background-color: #fff2ba;
+	color: black;
 }
 
 strong {
-  font-weight: 500;
+	font-weight: 500;
 }
 
 hr {
-  margin: 1.5rem -10px;
-  border: 1px solid #eee;
-  border-bottom: 0;
+	margin: 1.5rem -10px;
+	border: 1px solid #eee;
+	border-bottom: 0;
 }
 
 li > .highlight {
-  margin: 20px -20px;
-  margin-right: -10px;
-  border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px;
+	margin: 20px -20px;
+	margin-right: -10px;
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
 }
 
 .highlight {
-  margin: 20px -10px;
-  padding: 10px;
-  background-color: #eee;
-  overflow-x: auto;
-  overflow-y: scroll;
+	margin: 20px -10px;
+	padding: 10px;
+	background-color: #eee;
+	overflow-x: auto;
+	overflow-y: scroll;
 }
 
 .chroma {
-  margin: 0;
-  padding: 0;
-  display: block;
+	margin: 0;
+	padding: 0;
+	display: block;
 }
 
 .chroma > code {
-  display: block;
-  padding: 0;
+	display: block;
+	padding: 0;
 }
 
 .comment_on_hn {
-  margin-top: 20px;
+	margin-top: 20px;
 }
 
 .footer {
-  margin: 20px 0;
-  font-weight: 100;
+	margin: 20px 0;
+	font-weight: 100;
 }
 
 @media screen and (min-width: 820px) {
-  body {
-    max-width: 820px;
-  }
+	body {
+		max-width: 820px;
+	}
 
-  .content > * {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
+	.content > * {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
 
-  .content > ul,
-  .content > ol {
-    padding-left: 50px;
-  }
+	.content > ul,
+	.content > ol {
+		padding-left: 50px;
+	}
 
-  .content > ul.posts {
-    padding-left: 10px;
-  }
+	.content > ul.posts {
+		padding-left: 10px;
+	}
 
-  p.sidenote,
-  div.highlight {
-    padding: 20px;
-    border-radius: 4px;
-    margin: 20px -20px;
-  }
+	p.sidenote,
+	div.highlight {
+		padding: 20px;
+		border-radius: 4px;
+		margin: 20px -20px;
+	}
 
-  li > .highlight {
-    margin-right: -20px;
-  }
+	li > .highlight {
+		margin-right: -20px;
+	}
 
-  .header,
-  .footer {
-    padding: 0 10px;
-  }
+	.header,
+	.footer {
+		padding: 0 10px;
+	}
+}
+
+.chroma > .language-diff > .line:has(.gd):not(:has(.gd:empty)) {
+	margin-left: -20px;
+	margin-right: -20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: #fdd;
+}
+
+.chroma > .language-diff .gd {
+	color: #ed0000;
+	font-weight: 500;
+}
+
+.chroma > .language-diff > .line:has(.gi):not(:has(.gi:empty)) {
+	margin-left: -20px;
+	margin-right: -20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: #dfd;
+}
+
+.chroma > .language-diff .gi {
+	color: #00cb00;
+	font-weight: 500;
 }

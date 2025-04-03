@@ -1,6 +1,4 @@
 # Hugo
 /.hugo_build.lock
+/public/
 /resources/_gen
-
-# custom snapshots for easy diffing
-/.generated/
