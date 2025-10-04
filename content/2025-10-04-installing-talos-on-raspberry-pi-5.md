@@ -5,7 +5,7 @@ date: 2025-10-04T18:10:00+02:00
 
 A few months ago, [some smart folks](https://github.com/siderolabs/sbc-raspberrypi/issues/23#issue-2563309502) have figured out patches required to make [Talos](https://www.talos.dev/) work on Raspberry Pi 5. As Talos is my favorite Kubernetes distro, I've been waiting for this moment for a long time. In this post, I'll share all steps required to get Talos up and running on Raspberry Pi 5.
 
-Before we begin, you can find all files from this blog post in my `homelab` repository, specifically commits [`b0f7125`](https://github.com/artuross/homelab/commit/b0f712519992e7cd3b2ce97bae838415cda750e7) and [`2485555`](https://github.com/artuross/homelab/commit/24855553b9aeef4f25c3d6320477c6781426df27).
+Before we begin, you can find all files from this blog post in my [`homelab`](https://github.com/artuross/homelab) repository, specifically commits [`b0f7125`](https://github.com/artuross/homelab/commit/b0f712519992e7cd3b2ce97bae838415cda750e7) and [`2485555`](https://github.com/artuross/homelab/commit/24855553b9aeef4f25c3d6320477c6781426df27).
 
 ## Hardware
 
