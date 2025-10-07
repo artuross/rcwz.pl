@@ -9,3 +9,6 @@ title = true
 
 [markup.highlight]
 noClasses = false
+
+[taxonomies]
+series = 'series'

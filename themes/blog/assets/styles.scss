@@ -120,6 +120,12 @@ p.sidenote {
 	margin: 20px -10px;
 }
 
+.post-series {
+	border: 1px solid #eee;
+	padding: 10px;
+	margin: 20px -10px;
+}
+
 a:hover {
 	color: #ffc830;
 }
@@ -145,7 +151,7 @@ a > code {
 }
 
 p.sidenote code {
-  filter: brightness(95%);
+	filter: brightness(95%);
 }
 
 strong {
@@ -210,6 +216,20 @@ li > .highlight {
 
 	.content > ul.posts {
 		padding-left: 10px;
+	}
+
+	.post-series {
+		padding: 20px;
+		border-radius: 4px;
+		margin: 20px -20px;
+
+		& :first-child {
+			margin-top: 0;
+		}
+
+		& :last-child {
+			margin-bottom: 0;
+		}
 	}
 
 	p.sidenote,

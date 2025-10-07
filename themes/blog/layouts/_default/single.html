@@ -1,11 +1,36 @@
 {{ define "main" }}
 <div class="post-content">
-  <h1>{{ .Title }}</h1>
-  {{ .Content }}
+	<h1>{{ .Title }}</h1>
+
+	<!-- series -->
+	{{ if .Param "series" }} {{ $currentPage := .Page.Permalink }} {{ $name :=
+	index .Params.series 0 }}
+	<div class="post-series">
+		<p>
+			This post is part of the series
+			<a href="/series/{{$name | urlize }}">{{$name}}</a>. If you find it
+			interesting, take a look at remaining posts:
+		</p>
+		{{ $seriesNameLower := lower $name }} {{ $series := index
+		.Site.Taxonomies.series $seriesNameLower }}
+		<ol>
+			{{ range sort $series.Pages "Date" }}
+			<li>
+				{{ if ne $currentPage .Permalink }}
+				<a href="{{.Permalink}}">{{.LinkTitle}}</a>
+				{{ else }}<b>{{.LinkTitle}}</b>{{ end }}
+			</li>
+			{{end}}
+		</ol>
+	</div>
+	{{end}}
+
+	<!-- content -->
+	{{ .Content }}
 </div>
 
 {{ if .Params.hn_link }}
 <div class="comment_on_hn">
-  Comment on <a href="{{ .Params.hn_link }}">Hacker News</a>.
+	Comment on <a href="{{ .Params.hn_link }}">Hacker News</a>.
 </div>
 {{ end }} {{ end }}
