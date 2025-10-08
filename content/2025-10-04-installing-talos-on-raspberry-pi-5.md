@@ -1,6 +1,7 @@
 ---
 title: Installing Talos on Raspberry Pi 5
 date: 2025-10-04T18:10:00+02:00
+series: ["Talos cluster on Raspberry Pi 5"]
 ---
 
 A few months ago, [some smart folks](https://github.com/siderolabs/sbc-raspberrypi/issues/23#issue-2563309502) have figured out patches required to make [Talos](https://www.talos.dev/) work on Raspberry Pi 5. As Talos is my favorite Kubernetes distro, I've been waiting for this moment for a long time. In this post, I'll share all steps required to get Talos up and running on Raspberry Pi 5.
