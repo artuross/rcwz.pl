@@ -21,6 +21,12 @@
 
 :root {
 	--font-family: "Fira Mono", monospace;
+	--code-block-bg: #f9f9f9;
+	--code-inline-bg: #f0f0f0;
+	--code-block-diff-add-bg: #dfd;
+	--code-block-diff-add-text: #00cb00;
+	--code-block-diff-remove-bg: #fdd;
+	--code-block-diff-remove-text: #ed0000;
 }
 
 * {
@@ -114,7 +120,7 @@ a {
 }
 
 p.sidenote {
-	background-color: #eee;
+	background-color: var(--code-block-bg);
 	padding: 10px;
 	margin: 20px -10px;
 }
@@ -130,9 +136,13 @@ a:hover {
 }
 
 code {
-	background-color: #ededed;
+	background-color: var(--code-inline-bg);
 	padding: 3px 6px;
 	border-radius: 3px;
+}
+
+.highlight code {
+	background-color: var(--code-block-bg);
 }
 
 a:has(code) {
@@ -173,7 +183,7 @@ li > .highlight {
 .highlight {
 	margin: 20px -10px;
 	padding: 10px;
-	background-color: #eee;
+	background-color: var(--code-block-bg);
 	overflow-x: auto;
 	overflow-y: scroll;
 }
@@ -253,11 +263,11 @@ li > .highlight {
 	margin-right: -20px;
 	padding-left: 20px;
 	padding-right: 20px;
-	background-color: #fdd;
+	background-color: var(--code-block-diff-remove-bg);
 }
 
 .chroma > .language-diff .gd {
-	color: #ed0000;
+	color: var(--code-block-diff-remove-text);
 	font-weight: 500;
 }
 
@@ -266,11 +276,11 @@ li > .highlight {
 	margin-right: -20px;
 	padding-left: 20px;
 	padding-right: 20px;
-	background-color: #dfd;
+	background-color: var(--code-block-diff-add-bg);
 }
 
 .chroma > .language-diff .gi {
-	color: #00cb00;
+	color: var(--code-block-diff-add-text);
 	font-weight: 500;
 }
 
