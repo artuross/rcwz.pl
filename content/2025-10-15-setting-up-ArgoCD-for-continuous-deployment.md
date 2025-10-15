@@ -4,7 +4,7 @@ date: 2025-10-15T20:00:00+02:00
 series: ["Talos cluster on Raspberry Pi 5"]
 ---
 
-In the [previous blog post in this series](2025-10-13-managing-secrets-with-1password-and-external-secrets/), I added secret management with [External Secrets Operator](https://external-secrets.io/latest/) and [1Password Connect](https://developer.1password.com/docs/connect/). This was a necessary step before introducing [ArgoCD](https://argo-cd.readthedocs.io/en/stable/), which will automate the deployment of applications to my Kubernetes cluster. Without ESO, I would either have to commit secrets in Git (not ideal, unless you plan to use [Sealed Secrets](https://github.com/bitnami-labs/sealed-secrets) or [SOPS](https://github.com/getsops/sops)) or to manually create secrets in the cluster.
+In the [previous blog post in this series](/2025-10-13-managing-secrets-with-1password-and-external-secrets/), I added secret management with [External Secrets Operator](https://external-secrets.io/latest/) and [1Password Connect](https://developer.1password.com/docs/connect/). This was a necessary step before introducing [ArgoCD](https://argo-cd.readthedocs.io/en/stable/), which will automate the deployment of applications to my Kubernetes cluster. Without ESO, I would either have to commit secrets in Git (not ideal, unless you plan to use [Sealed Secrets](https://github.com/bitnami-labs/sealed-secrets) or [SOPS](https://github.com/getsops/sops)) or to manually create secrets in the cluster.
 
 Today, I will set up ArgoCD and migrate all components deployed so far to it. ArgoCD is quite powerful, but I'm going to keep it simple for now, since I wouldn't be able to use all the features just yet.
 
