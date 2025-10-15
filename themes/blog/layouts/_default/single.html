@@ -1,6 +1,10 @@
 {{ define "main" }}
+
 <div class="post-content">
-	<h1>{{ .Title }}</h1>
+	<header>
+		<p class="date">{{ .Date | time.Format "2006-01-02" }}</p>
+		<h1>{{ .Title }}</h1>
+	</header>
 
 	<!-- series -->
 	{{ if .Param "series" }} {{ $currentPage := .Page.Permalink }} {{ $name :=
