@@ -58,12 +58,18 @@ This is how it looks like in practice (this assumes this file is saved under `to
 package tools
 
 import (
-	_ "github.com/cosmtrek/air"                             //go:generate go install github.com/cosmtrek/air
-	_ "github.com/daixiang0/gci"                            //go:generate go install github.com/daixiang0/gci
-	_ "github.com/golangci/golangci-lint/cmd/golangci-lint" //go:generate go install github.com/golangci/golangci-lint/cmd/golangci-lint
-	_ "github.com/vektra/mockery/v2"                        //go:generate go install github.com/vektra/mockery/v2
-	_ "gotest.tools/gotestsum"                              //go:generate go install gotest.tools/gotestsum
-	_ "mvdan.cc/gofumpt"                                    //go:generate go install mvdan.cc/gofumpt
+    //go:generate go install github.com/cosmtrek/air
+    _ "github.com/cosmtrek/air"
+    //go:generate go install github.com/daixiang0/gci
+    _ "github.com/daixiang0/gci"
+    //go:generate go install github.com/golangci/golangci-lint/cmd/golangci-lint
+    _ "github.com/golangci/golangci-lint/cmd/golangci-lint"
+    //go:generate go install github.com/vektra/mockery/v2
+    _ "github.com/vektra/mockery/v2"
+    //go:generate go install gotest.tools/gotestsum
+    _ "gotest.tools/gotestsum"
+    //go:generate go install mvdan.cc/gofumpt
+    _ "mvdan.cc/gofumpt"
 )
 ```
 
