@@ -78,13 +78,13 @@ body {
 
 .post-entry {
 	display: flex;
-	align-items: center;
 	margin-bottom: 10px;
 }
 
 .post-entry .date {
 	font-weight: 100;
 	margin-right: 20px;
+	min-width: 100px;
 }
 
 .post-entry .title {
