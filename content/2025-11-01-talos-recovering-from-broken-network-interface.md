@@ -21,7 +21,7 @@ nvme0n1               476.9G
 └─nvme0n1p5           425.8G
 ```
 
-The one that I'm interesting it is `STATE`, which contains the Talos configuration (but not `etcd` which is stored in `EPHEMERAL`).
+The one that I'm interested in is the `STATE` partition, which contains the Talos configuration (but not `etcd` which is stored in `EPHEMERAL`).
 
 A simple fix is to "clean" the `STATE` partition and let Talos recreate it on the next boot. This can be done with the following command:
 
